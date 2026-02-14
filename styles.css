@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+header, footer {
+    background-color: #fff;
+    color: #000;
+}
+
+nav, .footer-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;   
+}
+
+main {
+    padding-inline: 40px; //почему тут не работает 1vw?
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+}
+
+.car-section {
+    display: flex;
+    gap: 20px;
+}
+
+.car_logo {
+    width: 5vw;
+}
+
+section {
+    margin-top: 15px;
+}
+
+article {
+    margin-top: 50px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.back-to-menu a {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.footer-menu {
+    padding-bottom: 30px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #000;
+}
