@@ -13,7 +13,19 @@ header, footer {
     color: #000;
 }
 
-nav, .footer-menu {
+#main-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#main-navigation ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-menu {
     display: flex;
     justify-content: space-around;
 }
@@ -31,9 +43,8 @@ main {
     padding-inline: 4vw;
 }
 
-.main-header {
-    display: flex;
-    justify-content: center;
+h1 {
+    text-align: center;
 }
 
 .car-section {
@@ -92,15 +103,3 @@ td {
     border: 5px solid rgb(255, 255, 255);   
 }
 
-form {
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 10px;
-    margin-inline: auto;
-    margin-top: 35px;
-    max-width: 800px;
-}
-
-input[type="range"] {
-    color: #fff;
-}

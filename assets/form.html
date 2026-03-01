@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосалон Ариа</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="./icons/car.png">
+</head>
+<body>
+    <header>
+            <nav id="main-navigation">
+        <ul>
+            <li><a href="#ford-section">Ford</a></li>
+            <li><a href="#toyota-section">Toyota</a></li>
+            <li><a href="#bmw-section">BMW</a></li>
+            <li><a href="#table-section">Table</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+                <div class="shop-logo">
+                    <a href="index.html">
+                        <img src="./images/aria_logo.png" alt="shop logo" width="70">
+                    </a>
+                </div>
+            </nav>
+    </header>
+
+    <form autocomplete="on">
+            <h3>Form</h3>
+            <fieldset>
+                <legend>Information</legend>
+                <div class="form-element">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="dtl">Birthday</label>
+                        <input type="datetime-local" id="dtl">
+                    </div>
+
+                    <div class="form-element">
+                        <p>Gender</p>
+                        <label for="mail">Male</label>
+                        <input type="radio" name="gender" id="mail">
+
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="drive-ex">Drive experience</label>
+                        <select  name="drive-experience" id="drive-ex">
+                            <option value="..." selected>...</option>
+                            <option value="0-1 year">0-1 year</option>
+                            <option value="1-5 years">1-5 years</option>
+                            <option value="5-10 years">5-10 years</option>
+                            <option value="10+ years">10+ years</option>
+                        </select>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacts</legend>
+                    <div class="form-element">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+
+                    <div class="form-element">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="adress">Adress</label>
+                        <textarea id="adress" rows="6" cols="40"></textarea>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Car info</legend>
+                <div class="form-element">
+                        <label for="brand-select">Brand</label>
+                        <select  name="brand" id="brand-select">
+                            <option value="..." selected>...</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Toyota">Toyota</option>
+                        </select>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="model-select">Model</label>
+                        <select  name="model" id="model-select">
+                            <option value="..." selected>...</option>
+                            <option value="model">Fiesta 1.0</option>
+                            <option value="model">RAV 4</option>
+                            <option value="model">Camry</option>
+                            <option value="model">Mondeo 4</option>
+                            <option value="model">X5</option>
+                            <option value="model">i4</option>
+                        </select>
+                        
+                        <div class="form-element">
+                            <label for="used">Used</label>
+                            <input type="checkbox" id="used">
+                        </div>
+
+                        <div class="form-element">
+                        <p>Color</p>
+                        <label for="color-red">Red</label>
+                        <input type="radio"  name="color" id="color-red">
+                        <label for="color-black">Black</label>
+                        <input type="radio"  name="color" id="color-black">
+                        <label for="color-blue">Blue</label>
+                        <input type="radio"  name="color" id="color-blue">
+                        <label for="color-white">White</label>
+                        <input type="radio"  name="color" id="color-white">
+                        <label for="color-grey">Grey</label>
+                        <input type="radio"  name="color" id="color-grey">
+                    </div>
+
+                    <div class="form-element">
+            <label for="range">Price</label>
+            <input 
+                type="range" 
+                id="range"
+                name="price"
+                min="10"
+                max="100"
+                step="10"
+                list="money"
+                >
+            <datalist id="money">
+                <option value="10" label="10"></option>
+                <option value="20" label="20"></option>
+                <option value="30" label="30"></option>
+                <option value="40" label="40"></option>
+                <option value="50" label="50"></option>
+                <option value="60" label="60"></option>
+                <option value="70" label="70"></option>
+                <option value="80" label="80"></option>
+                <option value="90" label="90"></option>
+                <option value="100" label="100"></option>
+            </datalist>
+        </div>
+                    </div>
+            </fieldset>
+
+
+            <div class="form-element">
+            <button type="reset">Cancel</button>
+            <button type="submit">Ok</button>
+        </div>
+        </form>
+    
+
+
+
+
+    <footer>
+        <section class="footer-menu">
+            <div class="footer-adress">
+                <h2>Твой путь начинается здесь.</h2>
+            <address>
+                <p>г. Киев, проспект Победы, 100.</p>
+            </address>
+            </div>
+            <section class="footer-contacts">
+                <a href="mailto:some@one.com">ariamotors@gmail.com</a>
+                <a href="tel:+380XXXXXXXXX">+380XXXXXXXXX</a>
+            </section>
+            <section class="footer-cite">
+                <a href="https://www.aria-motors.com/">www.aria-motors.com.ua</a>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>
