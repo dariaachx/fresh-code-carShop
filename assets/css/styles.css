@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #4b4b4b;
     color: #fff;
 }
 
@@ -28,7 +28,7 @@ nav a {
 }
 
 main {
-    padding-inline: 40px; //почему тут не работает 1vw?
+    padding-inline: 4vw;
 }
 
 .main-header {
