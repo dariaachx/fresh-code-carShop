@@ -92,10 +92,8 @@ tbody {
 
 table {
     margin-top: 35px;
-}
-
-#table-section {
     margin-inline: auto;
+    text-align: center;
 }
 
 th,
@@ -103,3 +101,35 @@ td {
     border: 5px solid rgb(255, 255, 255);   
 }
 
+.best-sellers{
+    color: rgb(76, 0, 255);
+}
+
+.best-sellers::after {
+    content: "#01";
+    color: #ff0000;
+}
+
+/* Для нечетных строк*/
+.bs-body tr:nth-child(odd) {
+    background-color: #b6afaf;
+}
+
+/* Для четных строк*/
+.bs-body tr:nth-child(even) {
+    background-color: #3f3f3f;
+}
+
+.bs-table td:first-child{
+    background-color: #ff0000;
+}
+
+
+/*не знаю как сделать это псевдоелементами или псевдоклассами*/
+.bs-header {
+    background-color: rgb(76, 0, 255);
+}
+
+tfoot {
+    background-color: #000;
+}
