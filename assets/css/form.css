@@ -1,12 +1,40 @@
+* {
+    box-sizing: border-box;
+}
 form {
     border: 2px solid white;
     border-radius: 5px;
     padding: 10px;
     margin-inline: auto;
     margin-top: 35px;
-    max-width: 800px;
+    max-width: 1000px;
+}
+
+h3 {
+    text-align: center;
 }
 
 input[type="range"] {
     color: #fff;
+}
+
+.form-body {
+    display: flex;
+    gap: 20px;
+}
+
+.form-element {
+    margin: 5px;
+}
+
+.button-section {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    width: 60px;
+    height: 25px;
 }
